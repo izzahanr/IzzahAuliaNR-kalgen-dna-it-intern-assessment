@@ -1,0 +1,29 @@
+# Node / Next.js
+node_modules/
+.next/
+out/
+build/
+dist/
+.env*.local
+.env
+.vercel
+
+# .NET / C#
+bin/
+obj/
+*.sqlite
+*.db
+*.db-shm
+*.db-wal
+appsettings.Development.json
+
+# IDEs
+.vscode/
+.vs/
+*.suo
+*.user
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
