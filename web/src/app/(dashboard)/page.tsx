@@ -103,8 +103,8 @@ export default async function DashboardPage() {
                     <td style={{ padding: '12px 16px', fontSize: '14px' }}>{req.projectCode || '-'}</td>
                     <td style={{ padding: '12px 16px', fontSize: '14px' }}>
                       <span style={{ 
-                        backgroundColor: 'var(--light-green)', 
-                        color: 'var(--secondary-color)', 
+                        backgroundColor: 'var(--success-light)', 
+                        color: 'var(--success)', 
                         padding: '4px 8px', 
                         borderRadius: '12px', 
                         fontSize: '12px',

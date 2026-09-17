@@ -7,7 +7,7 @@ const APP_KEY = process.env.APP_KEY || '';
 export async function fetchKalbeApi(endpoint: string, options: RequestInit = {}) {
   const token = (await cookies()).get('access_token')?.value;
 
-  const headers: HeadersInit = {
+  const headers: any = {
     'Content-Type': 'application/json',
     'app_id': APP_ID,
     'app_key': APP_KEY,

@@ -1,17 +1,17 @@
 :root {
-  --primary-color: #E8A8B8;
-  --secondary-color: #A8C3B0;
-  --bg-color: #FFFFFF;
-  --text-dark: #374151;
-  --text-light: #9CA3AF;
+  --primary-color: #2563EB; /* Bright Blue */
+  --secondary-color: #1E40AF; /* Deep Blue */
+  --bg-color: #F8FAFC; /* Slate 50, reduces eye strain compared to pure white */
+  --text-dark: #0F172A; /* Slate 900 */
+  --text-light: #64748B; /* Slate 500 */
   --white: #FFFFFF;
-  --border-color: #E5E7EB;
-  --danger: #EF4444; /* Standard danger red */
-  --success: #A8C3B0; /* Soft green for success */
+  --border-color: #E2E8F0; /* Slate 200 */
+  --danger: #EF4444; /* Standard Red */
+  --success: #10B981; /* Emerald Green */
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --radius: 8px;
-  --light-pink: #F8E4E9;
-  --light-green: #EAF3ED;
+  --primary-light: #EFF6FF; /* Blue 50 */
+  --success-light: #D1FAE5; /* Emerald 100 */
 }
 
 * {
@@ -168,12 +168,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link:hover {
-  background-color: var(--light-pink);
+  background-color: var(--primary-light);
   color: var(--primary-color);
 }
 
 .nav-link.active {
-  background-color: var(--light-pink);
+  background-color: var(--primary-light);
   color: var(--primary-color);
   border-left-color: var(--primary-color);
   font-weight: 600;
