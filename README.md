@@ -33,12 +33,15 @@ npm run dev
 
 ### 3. Usage
 - Open `http://localhost:3000`
-- Login with the credentials provided in the Postman collection (`assessment.it` / `Password123?`).
-- Navigate between Master Trackers and Lab Requests.
+- Login with your custom credentials:
+  - **Username**: `izzahanr`
+  - **Password**: `izzah123`
+  *(Note: The system internally maps this to the official Kalbe testing account to fetch real API data while maintaining your personal profile).*
+- Navigate between Dashboard, Master Trackers, and Lab Requests.
 - Perform CRUD operations and verify that they reflect in the Kalbe API and the local `.NET SQLite` database.
 
 ## Design Highlights
-- Minimalist and responsive styling based on Biopharma's brand color (`#0F763F`).
+- Professional "Corporate Ocean Blue" theme (`#1E40AF` & `#2563EB`) designed for high contrast, minimal eye strain, and a modern SaaS aesthetic.
 - Reusable UI Components: `DataTable`, `Pagination`, `Modal`, `Toast`.
 - Strict decoupling of Server Components (data fetching) and Client Components (interactivity).
 
