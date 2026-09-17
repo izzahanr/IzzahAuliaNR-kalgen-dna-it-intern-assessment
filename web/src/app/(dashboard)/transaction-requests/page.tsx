@@ -19,7 +19,8 @@ export default async function TransactionRequestsPage({
     const res = await fetchKalbeApi('/requests/paging', { headers });
     
     if (res.ok) {
-      requests = await res.json();
+      const responseData = await res.json();
+      requests = responseData.data?.data || responseData.data || responseData || [];
     } else {
       const errData = await res.json().catch(() => ({}));
       error = errData.message || 'Failed to fetch requests';

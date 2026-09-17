@@ -59,9 +59,22 @@ export default function DashboardLayout({
       <div className="main-content">
         {/* Top Navbar */}
         <header className="top-navbar">
-          <div className="user-profile">
-            <span>PANGGALIH SAKO DENTA</span>
-            <div className="avatar">PS</div>
+          <div className="user-profile" style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span>Izzah Aulia Nur Risa</span>
+              <div className="avatar">IA</div>
+            </div>
+            
+            <button 
+              onClick={async () => {
+                await fetch('/api/auth/logout', { method: 'POST' });
+                window.location.href = '/login';
+              }} 
+              className="btn btn-outline" 
+              style={{ padding: '4px 12px', fontSize: '13px', borderColor: '#E5E7EB', color: 'var(--text-light)' }}
+            >
+              Sign Out
+            </button>
           </div>
         </header>
 

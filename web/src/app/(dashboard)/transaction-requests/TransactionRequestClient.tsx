@@ -106,7 +106,7 @@ export default function TransactionRequestClient({ initialRequests }: Transactio
       ...formData,
       partnerId: formData.partnerId || 'urn:uuid:d9568011-9afe-7002-aa31-83001c8be297',
       receivedDate: formData.receivedDate ? new Date(formData.receivedDate).toISOString() : new Date().toISOString(),
-      id: selectedTracker?.id,
+      id: selectedRequest?.id,
       createdBy: 'System', 
       updatedBy: 'System',
       isActive: true,

@@ -19,7 +19,8 @@ export default async function MasterTrackersPage({
     const res = await fetchKalbeApi('/trackers/paging', { headers });
     
     if (res.ok) {
-      trackers = await res.json();
+      const responseData = await res.json();
+      trackers = responseData.data?.data || responseData.data || responseData || [];
     } else {
       const errData = await res.json().catch(() => ({}));
       error = errData.message || 'Failed to fetch trackers';

@@ -1,15 +1,17 @@
 :root {
-  --primary-color: #0F763F;
-  --secondary-color: #08A252;
-  --bg-color: #F4F7F6;
-  --text-dark: #333333;
-  --text-light: #7A7A7A;
+  --primary-color: #E8A8B8;
+  --secondary-color: #A8C3B0;
+  --bg-color: #FFFFFF;
+  --text-dark: #374151;
+  --text-light: #9CA3AF;
   --white: #FFFFFF;
-  --border-color: #E2E8F0;
-  --danger: #E3342F;
-  --success: #38C172;
+  --border-color: #E5E7EB;
+  --danger: #EF4444; /* Standard danger red */
+  --success: #A8C3B0; /* Soft green for success */
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --radius: 8px;
+  --light-pink: #F8E4E9;
+  --light-green: #EAF3ED;
 }
 
 * {
@@ -166,12 +168,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link:hover {
-  background-color: var(--bg-color);
+  background-color: var(--light-pink);
   color: var(--primary-color);
 }
 
 .nav-link.active {
-  background-color: #E8F3ED;
+  background-color: var(--light-pink);
   color: var(--primary-color);
   border-left-color: var(--primary-color);
   font-weight: 600;
